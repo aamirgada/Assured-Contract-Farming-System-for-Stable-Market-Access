@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+    
+    <!-- Background Elements -->
+    <rect width="600" height="400" fill="#f8f9fa" opacity="0.5"/>
+    
+    <!-- Sun -->
+    <circle cx="500" cy="100" r="40" fill="#FFD700"/>
+    <circle cx="500" cy="100" r="50" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Clouds -->
+    <g class="float" style="animation-delay: 0s">
+        <circle cx="100" cy="80" r="20" fill="white"/>
+        <circle cx="130" cy="80" r="25" fill="white"/>
+        <circle cx="160" cy="80" r="20" fill="white"/>
+    </g>
+    
+    <g class="float" style="animation-delay: 2s">
+        <circle cx="400" cy="60" r="15" fill="white"/>
+        <circle cx="430" cy="60" r="20" fill="white"/>
+        <circle cx="460" cy="60" r="15" fill="white"/>
+    </g>
+    
+    <!-- Farmer -->
+    <g class="float" style="animation-delay: 1s">
+        <!-- Body -->
+        <rect x="200" y="250" width="40" height="80" fill="#4CAF50"/>
+        <!-- Head -->
+        <circle cx="220" cy="230" r="20" fill="#FFD3B6"/>
+        <!-- Hat -->
+        <path d="M190 220 L250 220 L240 200 L200 200 Z" fill="#795548"/>
+    </g>
+    
+    <!-- Tractor -->
+    <g class="float" style="animation-delay: 0.5s">
+        <!-- Body -->
+        <rect x="300" y="280" width="120" height="60" fill="#4CAF50" rx="5"/>
+        <!-- Cabin -->
+        <rect x="380" y="260" width="60" height="40" fill="#4CAF50" rx="5"/>
+        <!-- Wheels -->
+        <circle cx="330" cy="340" r="20" fill="#333"/>
+        <circle cx="390" cy="340" r="20" fill="#333"/>
+        <!-- Exhaust -->
+        <rect x="440" y="270" width="5" height="20" fill="#333"/>
+        <circle cx="442.5" cy="270" r="5" fill="#333"/>
+    </g>
+    
+    <!-- Ground -->
+    <rect x="0" y="360" width="600" height="40" fill="#8BC34A"/>
+    
+    <!-- Plants -->
+    <g>
+        <path d="M50 360 L50 320 L60 340 Z" fill="#4CAF50"/>
+        <path d="M150 360 L150 310 L160 340 Z" fill="#4CAF50"/>
+        <path d="M250 360 L250 330 L260 350 Z" fill="#4CAF50"/>
+        <path d="M350 360 L350 320 L360 340 Z" fill="#4CAF50"/>
+        <path d="M450 360 L450 310 L460 340 Z" fill="#4CAF50"/>
+        <path d="M550 360 L550 330 L560 350 Z" fill="#4CAF50"/>
+    </g>
+</svg> 
